@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonflower</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" />
+    <style>
+        body{
+            font-family: "Lobster";
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/bg.jpg');
+            background-repeat: no-repeat;
+        }
+        main{
+            margin: 0 auto;
+            width: 54em;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .card{
+            background-color: #fff;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50em;
+            height: 70em;
+            border: 1px solid #0e0e0e;
+        }
+        .anim{
+            animation: flip 2s forwards;
+        }
+        .card-valentext{
+            margin: 0;
+            margin-top: 30px;
+            font-size: 36px;
+            text-align: center;
+        }
+        .card-img{
+            padding: 0 15px;
+        }
+        .card-img img{
+            object-fit: contain;
+            width: 100%;
+            max-height: 400px;
+        }
+        .card-img-text{
+            margin: 0;
+            position: relative;
+            left: 65%;
+            font-size: 1.7em;
+        }
+        .card-img-undertext{
+            margin: 0;
+            text-align: center;
+            font-size: 3.6em;
+            line-height: 1;
+        }
+        .card-btn{
+            position: relative;
+            left: 75%;
+            bottom: 5%;
+        }
+        .card-btn button{
+            position: absolute;
+            bottom: 0;
+            right: 80%;
+            white-space: nowrap;
+            text-decoration: underline;
+            font-family: "Lobster";
+            font-size: 3em;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .card-btn button:active{
+            background-color: red;
+        }
+        #card1{
+            z-index: 6;
+            left: 5px;
+        }
+        #card2{
+            z-index: 5;
+            left: 10px;
+        }
+        #card3{
+            z-index: 4;
+            left: 15px;
+        }
+        #card4{
+            z-index: 3;
+            left: 20px;
+        }
+        #card5{
+            z-index: 2;
+            left: 25px;
+        }
+        #card6{
+            z-index: 1;
+            left: 30px;
+        }
+        #card7{
+            justify-content: start;
+            z-index: 0;
+            left: 35px;
+        }
+        #card7 .card-img-undertext{
+            font-size: 22px;
+            padding: 0 1.5em;
+            text-align: left;
+        }
+        @keyframes flip {
+            from{
+                transform: translate(0);
+            }
+            to{
+                transform: translate(-520px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card" id="card1">
+            <p class="card-valentext">С днем святого вале...<br>вален...(ка)...<br>валевтина крч))0)</p>
+            <div class="card-img">
+                <p class="card-img-text">(типа тебе)</p>
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card1')">тык -></button>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <p class="card-valentext">❤️валентинковое❤️</p>
+            <div style="padding-bottom: 130px;" class="card-img">
+                <img src="img/2.png" alt="">
+                <p class="card-img-undertext">это мы похожие типа очень</p>
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card2')">еще тык -></button>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <p class="card-valentext">❤️валентинковое❤️</p>
+            <div style="padding-bottom: 70px;" class="card-img">
+                <img src="img/3.jpg" alt="">
+                <p class="card-img-undertext">а это я так на тебя смотрю все время ваще</p>
+                <p style="font-size: 21px;" class="card-img-undertext">(и ты на меня)</p>
+                <p style="font-size: 9px;" class="card-img-undertext">(солнце мое, взгляни на меня)</p>
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card3')">снова тык -></button>
+            </div>
+        </div>
+        <div class="card" id="card4">
+            <p class="card-valentext">❤️валентинковое❤️</p>
+            <div style="padding-bottom: 70px;" class="card-img">
+                <img src="img/4.webp" alt="">
+                <p class="card-img-undertext">это мы с тобой(обои)<br>
+                    когда вместе</p>
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card4')">опять тык -></button>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            <p class="card-valentext">❤️валентинковое❤️</p>
+            <div style="padding-bottom: 70px;" class="card-img">
+                <img src="img/6.png" alt="">
+                <p class="card-img-undertext">это у нас едет крыша (куда?)<br>
+                    без друг без друга</p>
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card5')">последний тык -></button>
+            </div>
+        </div>
+        <div class="card" id="card6">
+            <p class="card-valentext">❤️валентинковое❤️</p>
+            <div style="padding-bottom: 70px;" class="card-img">
+                <img src="img/5.jpg" alt="">
+                <p class="card-img-undertext">это ты улыбаешбся довольной<br>
+                    читая это :)</p>
+            </div>
+            <div class="card-btn">
+                <button onclick="anim('card6')">ну ряльна последний тык -></button>
+            </div>
+        </div>
+        
+        <div class="card" id="card7">
+            <p class="card-valentext" id="last-valentext">❤️валентинковое❤️</p>
+            <p style="font-size: 22px;" class="card-img-undertext" id="last-card-img-undertext">Вощем поздравлёвываю тебя с днёй святаго...
+                святейшего... светлового........<br>Ладно, похихи-похаха и хватит, теперь серьезнее. Давай сделаем вот что...</p>
+            <button style="width: 100px; margin-left: 30px;" onclick="dod()" id="last-btn">Сделать!</button>
+        </div>
+    </main>
+</body>
+<script>
+    function anim(i){
+        document.getElementById(i).classList.add('anim');
+    }
+    function dod(){
+        document.getElementById('last-valentext').innerHTML = '❤️Валентинка для тебя❤️';
+        document.getElementById('last-btn').style.display = 'none';
+        document.getElementById('last-card-img-undertext').style.fontSize = '17px';
+        document.getElementById('last-card-img-undertext').style.fontFamily = 'Times New Roman';
+        document.getElementById('last-card-img-undertext').style.lineHeight = '1.2';
+        document.getElementById('last-card-img-undertext').style.marginTop = '20px';
+        document.getElementById('last-card-img-undertext').innerHTML = 'Вот, так намного лучше.<br>Так вот...<br>Дорогая моя любимая Айгуль, меня очень тронул твой трактат о любви, приуроченный к самому любвеобильному празднику в году. И мне даже начинает казаться, что тем я более сентиментальным становлюсь, чем общаюсь с тобой. Но все-таки успокаиваю себя тем, что это подчеркивает подлинность наших чувств друг к другу, а также веру с моей стороны в твои слова, не столь важно - написанные или сказанные. Спасибо тебе, это действительно важно слышать не только девушкам, как я считал ранее...<br>В словоблудие, коим иногда нет-нет да и борщу, пускаться не буду. Ты и так его слышишь и читаешь ежедневно, особенно когда дело касается тебя: да-а-а, тут меня хлебом не корми, но дай комплимент отпустить в твою сторону :)<br>Скажу лишь, ты права, сегодня мы не подержимся за ручки, не сходим в ресторан и даже не посидим в обнимку, но я все же хочу сегодняшний вечер чем-то отличался от обычного. Поэтому имею честь и смелость пригласить тебя на просмотр романтической киноленты этим вечером в 23:00 в Телеграме или Дискорде. Если на заметке фильмов нет, то предлагаю вновь насладиться классикой романтики в мультипликации - Валл-и. Иначе же, жду предложений.<br>Приходи чистой, красивой и благоухающей :)<br>С днем святого Валентина, моя любимая сука❤️<br><br>14.02.2022'
+    }
+</script>
+</html>
